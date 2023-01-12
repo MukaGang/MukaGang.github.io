@@ -2783,7 +2783,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #1732ca;
+					border-top: solid 2px rgb(35, 203, 203);
 					display: block;
 					padding: 0;
 				}
