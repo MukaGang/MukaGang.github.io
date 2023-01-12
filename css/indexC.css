@@ -2694,7 +2694,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #1732ca;
+		background: rgb(28, 156, 156);
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2783,7 +2783,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px rgb(35, 203, 203);
+					border-top: solid 2px rgb(28, 156, 156);
 					display: block;
 					padding: 0;
 				}
