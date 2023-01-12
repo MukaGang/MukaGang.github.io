@@ -57,7 +57,7 @@
       }
 
       nav {
-        background-color: rgb(35, 203, 203);
+        background-color: rgb(28, 156, 156);
       }
 
 
@@ -103,8 +103,20 @@
                     </div>
                     <div class="container">
                       <header class="major">
-                        <div class="tooltip" style="margin-left: 900px; overflow: visible;"> <g style="font-size: 25px;">?<g> <span class="tooltiptext"> Muka Gang is in fact a gang </span></div>
+                        <div class="tooltip" style="margin-left: 1000px; overflow: visible;"> <g style="font-size: 25px;">?<g> <span class="tooltiptext"> Muka gang is in fact a gang </span></div>
                         <script>
+                          
+                          function getConfirmationMukaGang() {
+									          var retVal = confirm("Are you sure you have what it takes to join muka Gang?");
+									          if( retVal == true ) {
+										          alert("You are now part of MUKA GANG MUKA GANG");
+										          document.location='Main.html'
+											        return true;
+										        } else {
+											        alert("You have been written down on the muka gang hit list");
+											        return false;
+									          }
+								          }
 
                           var n = localStorage.getItem('on_load_counter');
 
@@ -121,7 +133,7 @@
                             document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
                           }
 
-                          let x = Math.floor(Math.random() * 10);
+                          let x = Math.floor(Math.random() * 12);
 
                           if (x == 0) {
                             document.getElementById("News").innerHTML = "Muka Gang is cool";
@@ -143,15 +155,24 @@
                             document.getElementById("News").innerHTML = "Keanu reeves has officially become the first sponsor of muka gang";
                           } else if (x == 9)  {
                             document.getElementById("News").innerHTML = "The ragging war between goblin gang and muka gang is still happening till this day";
+                          } else if (x == 10)  {
+                            document.getElementById("News").innerHTML = "today we are paying our respects to sunzard, long rest his soul";
+                          } else if (x == 11)  {
+                            document.getElementById("News").innerHTML = "BREAKING NEWS megamind 2 has officialy been announced by the director joe swanson";
                           }
 
                         </script>
                       <h2> Muka Gang Offical Website </h2>
-                      <p> This is the offical Muka Gang Website were everyone from Muka gang comes together and says "MUKA GANG, MUKA GANG" and other stuff I guess. </p>
+                      <p> This is the offical muka Gang Website were everyone from muka gang comes together and says "MUKA GANG, MUKA GANG" and other stuff I guess. </p>
                       </header>
                       <p> "play with you? nahhh i only play with the boys in the basement" (Muka) </p>
                       <p> "see if these nuts fit in ur mouth" (Muka gang enjoyer) </p>
                       <p> "Muka pandilla bueno" (ManLover) </p>
+
+                      <p> Muka gang leader known as muka endoreses this website and this is his offical id to prove it. </p>
+                      <ul class="feature-icons">
+                        <img src="https://cdn.discordapp.com/attachments/801720481378992149/1063081461332312155/VHS_ID-CARD.JPG" alt="ID" style="height: 200pt; width: 400pt; padding-bottom: 40px ;" />
+                      </ul>
 
                     </div>
                   </section>
@@ -160,11 +181,18 @@
                   <section id="two">
                     <div class="container">
                       <h3> How to join Muka Gang </h3>
-                      <p> Verne followers are the most intelligent people in the world as they follow Verne that's obvious. </p>
-                      <iframe src="https://vnc4-my.sharepoint.com/personal/12511_vnc_qld_edu_au/_layouts/15/Doc.aspx?sourcedoc={736bef09-b3f0-4f3e-a15a-c988960ac3dc}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                      <p> Have you ever wanted to join muka gang? Have you ever wanted to be like the bois and hang out together? Do you hate goblin gang? Well muka gang might just be for you. </p>
                       <ul class="feature-icons">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQppPNAOnUUyUyx9dyJkLfQSpUzmKg-NnOHPQ&usqp=CAU" alt="Verne3" style="height: 350pt; width: 350pt; padding-bottom: 40px ;" />
-                        <button onclick="getConfirmationReligion();" style="margin-left: 0px ;" > <g> Join the Religion</g>
+                        <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/498/695/1c5.png" alt="The bois" style="height: 200pt; width: 400pt; padding-bottom: 40px ;" />
+                      </ul>
+                      <p> This is the what the peak muka gang member looks like. If you wish to join muka gang you must become one with the muka gang and gain the peak physical physique. </p>
+                      <ul class="feature-icons">
+                        <img src="https://images-fe.ssl-images-amazon.com/images/I/51b7VehylDL._AC_UL900_SR615,900_.jpg" alt="Scoops" style="height: 200pt; width: 400pt; padding-bottom: 40px ;" />
+                      </ul>
+                      <p> Finally the final step to join muka gang is to execute a furry. This is a photo from the order 66 excecution of the furries in 1978. Sadly there are some stragglers that must be delt with, so to prove you are muka gang material one must execute a furry to join. </p>
+                      <ul class="feature-icons">
+                        <img src="https://cdn.discordapp.com/attachments/801720481378992149/1062339963234041897/image.png" alt="Eliminate" style="height: 200pt; width: 400pt; padding-bottom: 40px ;" />
+                        <button onclick="getConfirmationMukaGang();" style="margin-left: 0px ;" > <g> Join Muka Gang </g>
                       </ul>
                     </div>
                   </section>
@@ -172,16 +200,21 @@
                 <!-- Three -->
                   <section id="three">
                     <div class="container">
-                      <h3> Sigma Grind </h3>
-                      <p> If you want to grind the Sigma mindset then you have come to the right place </p>
+                      <h3> Muka Gang base tour </h3>
+                      <p> Now that you are offically a part of muka gang we will now give you a tour of the offical muka gang HQ </p>
                       <div class="features">
                         <article>
-                          <iframe src="https://vnc4-my.sharepoint.com/personal/12511_vnc_qld_edu_au/_layouts/15/Doc.aspx?sourcedoc={760fe742-7a27-4235-9b28-19e1f74cc582}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-                          <a href="#" class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRowASXenAyohObZJ3DjMTxzcKcOwjRIF1otw&usqp=CAU" alt="Sigma" /></a>
+                          <p> This is the main room of the muka gang base. Muka offically named this basement HQ when he was trapped underneath a house. The grand design and stunning beauty of muka gang HQ has drawn many members from far and wide to muka gang.  </p>
+                          <a href="#" class="image"><img src="https://cdn.discordapp.com/attachments/801720481378992149/1062338074325024798/andrew-cabrera-screen-shot-2019-11-20-at-1-08-43-pm.png" alt="Basement 2" /></a>
+                          <a href="#" class="image"><img src="https://cdn.discordapp.com/attachments/801720481378992149/1062338157904941116/dark-creepy-dirty-abandoned-underground-260nw-1584854755.png" alt="Basement 1" /></a>
                           <div class="inner">
                           </div>
                         </article>
                       </div>
+                        <p> We have also aquired a rare photo of muka's actual kitchen. This is where muka does all the cooking and supplies food to all of muka gang. </p>
+                        <ul class="feature-icons">
+                          <img src="https://cdn.discordapp.com/attachments/801720481378992149/1062992489134424124/image.png" alt="Scoops" style="height: 200pt; width: 400pt; padding-bottom: 40px ;" />
+                        </ul>
                     </div>
                   </section>
               </div>
